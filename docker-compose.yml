@@ -1,0 +1,19 @@
+services:
+  database:
+    image: postgres:latest
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "Forgetto2011"
+      POSTGRES_DB: "medods"
+    ports:
+      - "5432:5432"
+  main:
+    build:
+      context: .
+    depends_on:
+      - database
+
+    
+    ports:
+      - "8085:8085"
+
