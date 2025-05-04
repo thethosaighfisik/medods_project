@@ -26,4 +26,4 @@ Database:
 
 CREATE TABLE medods ( id VARCHAR(255) PRIMARY KEY, password VARCHAR(255), refresh VARCHAR(255), pair_id VARCHAR(255), is_used BOOLEAN DEFAULT FALSE, ip VARCHAR(255);
 
-hi
+
